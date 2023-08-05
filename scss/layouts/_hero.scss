@@ -1,0 +1,102 @@
+@use "../abstracts/mixins" as *;
+
+.hero {
+   overflow-x: hidden;
+   background-color: var(--color-secondary-2);
+   position: relative;
+   z-index: 1;
+   
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &::before {
+         content: url("../assets/images/bg-pattern-1.svg");
+         position: absolute;
+         right: 86%;
+         top: -1rem;
+         display: block;
+
+         @include mq(small) {
+            display: none;
+         }
+      }
+
+      &::after {
+         content: url("../assets//images/bg-pattern-2.svg");
+         position: absolute;
+         left: 91.3%;
+         top: 11rem;
+         display: block;
+
+         @include mq(small) {
+            display: none;
+         }
+      }
+   }
+
+
+   &__title {
+      width: 39.6875rem;;
+      color: var(--color-white);
+      margin-bottom: 2.31rem;
+
+      @include mq(medium) {
+         width: 35.8125rem;
+         margin-bottom: 2.44rem;
+      }
+
+      @include mq(small) {
+         width: 21.4375rem;
+         margin-bottom: 2.5rem;
+      }
+
+      span {
+         @include bottom-line;
+       }
+   }
+
+   
+   &__image {
+      width: 47.9375rem;
+      height: 27.5625rem;
+      padding-left: 3.25rem;
+      margin-top: 3.13rem;
+
+      @media (max-width: 1199px) {
+         width: 32.125rem;
+         height: 18.5rem;
+         padding-left: 2.18rem;
+         margin-top: 3.44rem;
+      }
+
+      @include mq(small) {
+         width: 20rem;
+         height: 11.5rem;
+         padding-left: 1.51rem;
+         margin-top: 4rem;
+      }
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-primary);
+      clip-path: ellipse(110% 79% at top center);
+      z-index: -1;
+
+      @include mq(medium) {
+         clip-path: ellipse(130% 74% at top center);
+      }
+
+      @include mq(small) {
+         clip-path: ellipse(150% 80% at top center);
+     }
+   }
+}
+

@@ -1,0 +1,31 @@
+@use "../abstracts/mixins" as *;
+
+.footer {
+   display: flex;
+   justify-content: center;
+
+   &__wrapper {
+      width: 7.25rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 3.5rem;
+      margin-bottom: 6.88rem;
+
+      @include mq(medium) {
+         margin-bottom: 5rem;
+      }
+
+      @include mq(small) {
+         margin-bottom: 4rem;
+      }
+   }
+
+   &__social-logos {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}

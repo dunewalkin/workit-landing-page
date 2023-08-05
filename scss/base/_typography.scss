@@ -1,0 +1,67 @@
+@use "../abstracts/mixins" as *;
+
+body {
+   font-family: "Manrope";
+   font-size: 1.125rem;
+   line-height: 2rem;
+   font-weight: 400;
+   text-align: center;
+
+   @include mq(medium) {
+      font-size: 1rem;
+      line-height: 1.75rem;
+   } 
+}
+
+.heading {
+   font-family: Fraunces,serif;
+   font-variation-settings: "opsz" 144;
+   font-weight: 600;
+   text-align: center;
+
+
+   &__l {
+      font-size: 5rem;
+      line-height: 5rem;
+
+      @include mq(medium) {
+         font-size: 3.75rem;
+         line-height: 3.75rem;
+      } 
+
+      @include mq(small) {
+         font-size: 3.125rem;;
+         line-height: 3.125rem;
+      }
+   }
+
+   &__m {
+      font-size: 3.5rem;
+      line-height: 4rem;
+
+      @include mq(medium) {
+         font-size: 3rem;
+         line-height: 3.5rem;
+      } 
+
+      @include mq(small) {
+         font-size: 2rem;;
+         line-height: 3rem;
+      }
+   }
+
+   &__s {
+      font-size: 2rem;
+      line-height: 2.5rem;
+
+      @include mq(medium) {
+         font-size: 1.75rem;
+         line-height: 2.25rem;
+      } 
+
+      @include mq(small) {
+         font-size: 1.75rem;
+         line-height: 2.25rem;
+      }
+   }
+}
