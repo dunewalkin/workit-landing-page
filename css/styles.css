@@ -286,7 +286,7 @@ body {
   justify-content: space-between;
   gap: 1.62rem;
   padding: 0 10.31rem;
-  padding-block: 5.63rem 10.69rem;
+  padding-block: 6.5rem 10.69rem;
 }
 @media (max-width: 75em) {
   .info__cards {
@@ -327,8 +327,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--color-primary);
@@ -338,7 +338,7 @@ body {
 }
 @media (max-width: 75em) {
   .info__number {
-    width: 3.38rem;
+    width: 4.14rem;
     font-size: 1.25rem;
     line-height: 2.25rem;
     margin: 0 auto;
