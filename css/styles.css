@@ -169,6 +169,7 @@ body {
   text-decoration-color: var(--color-green);
   text-underline-offset: 0.55rem;
   text-decoration-thickness: 0.1875rem;
+  transition: all 0.2s;
 }
 .header__access:hover {
   color: var(--color-green);
@@ -201,7 +202,7 @@ body {
   content: url("../assets//images/bg-pattern-2.svg");
   position: absolute;
   left: 91.3%;
-  top: 11rem;
+  top: 11.5rem;
   display: block;
 }
 @media (max-width: 37.5em) {
@@ -230,7 +231,7 @@ body {
   color: var(--color-white);
   text-decoration: underline;
   text-decoration-color: var(--color-green);
-  text-underline-offset: 0.55rem;
+  text-underline-offset: 0.65rem;
   text-decoration-thickness: 0.1875rem;
 }
 .hero__image {
@@ -286,7 +287,7 @@ body {
   justify-content: space-between;
   gap: 1.62rem;
   padding: 0 10.31rem;
-  padding-block: 6.5rem 10.69rem;
+  padding-block: 5.63rem 10.69rem;
 }
 @media (max-width: 75em) {
   .info__cards {
@@ -377,7 +378,6 @@ body {
 }
 .info__desc {
   color: var(--color-secondary-1);
-  margin-bottom: 10.69rem;
 }
 @media (max-width: 75em) {
   .info__desc {
@@ -396,13 +396,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 126%;
   background-color: var(--color-secondary-2);
   clip-path: ellipse(110% 79% at top center);
   z-index: -1;
 }
 @media (max-width: 75em) {
   .info ::after {
+    height: 100%;
     clip-path: ellipse(130% 100% at top center);
   }
 }
@@ -425,11 +426,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
+  margin-top: 6.87rem;
   margin-bottom: 14.42rem;
 }
 @media (max-width: 75em) {
   .apply__wrapper {
+    padding: 0 1rem;
     margin-top: 6.27rem;
     margin-bottom: 20.31rem;
   }
@@ -451,7 +453,7 @@ body {
 }
 .apply__info {
   position: relative;
-  max-width: 37.625rem;
+  max-width: 45.625rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -464,7 +466,8 @@ body {
 }
 @media (max-width: 75em) {
   .apply__info {
-    padding: 3rem;
+    max-width: 32.125rem;
+    padding: 3.5rem;
     margin-left: -6.6rem;
     margin-bottom: -24.7rem;
   }
@@ -483,15 +486,15 @@ body {
   position: absolute;
   background-image: url("../assets/images/bg-pattern-3.svg");
   background-repeat: no-repeat;
-  right: 9%;
-  bottom: -15%;
+  right: 10%;
+  bottom: -13%;
   width: 221px;
   height: 212px;
 }
 @media (max-width: 75em) {
   .apply__info::after {
-    right: 2%;
-    bottom: -28%;
+    right: 2.6%;
+    bottom: -27%;
   }
 }
 @media (max-width: 37.5em) {

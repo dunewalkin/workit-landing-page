@@ -27,7 +27,7 @@
          content: url("../assets//images/bg-pattern-2.svg");
          position: absolute;
          left: 91.3%;
-         top: 11rem;
+         top: 11.5rem;
          display: block;
 
          @include mq(small) {
@@ -53,7 +53,7 @@
       }
 
       span {
-         @include bottom-line;
+         @include bottom-line-2;
        }
    }
 

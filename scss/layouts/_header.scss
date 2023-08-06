@@ -24,7 +24,8 @@
 
    &__access {
       font-weight: 700;
-      @include bottom-line;
+      @include bottom-line-1;
+      transition: all 0.2s;
 
       &:hover {
          color: var(--color-green);

@@ -1,10 +1,18 @@
 @use 'sass:map';
 
-@mixin bottom-line {
+@mixin bottom-line-1 {
    color: var(--color-white);
    text-decoration: underline;
    text-decoration-color: var(--color-green);
    text-underline-offset: 0.55rem;
+   text-decoration-thickness: 0.1875rem;
+}
+
+@mixin bottom-line-2 {
+   color: var(--color-white);
+   text-decoration: underline;
+   text-decoration-color: var(--color-green);
+   text-underline-offset: 0.65rem;
    text-decoration-thickness: 0.1875rem;
 }
 

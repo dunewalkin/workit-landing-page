@@ -9,7 +9,8 @@
       justify-content: space-between;
       gap: 1.62rem;
       padding: 0 10.31rem;
-      padding-block: 6.5rem 10.69rem;
+      padding-block: 5.63rem 10.69rem;
+      //padding-block: 5.63rem 17.3rem;
 
       @include mq(medium) {
          flex-direction: column;
@@ -96,7 +97,7 @@
 
    &__desc {
       color: var(--color-secondary-1);
-      margin-bottom: 10.69rem;
+      //margin-bottom: 10.69rem;
 
 
       @include mq(medium) {
@@ -115,12 +116,13 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 126%;
       background-color: var(--color-secondary-2);
       clip-path: ellipse(110% 79% at top center);
       z-index: -1;
 
       @include mq(medium) {
+         height: 100%;
          clip-path: ellipse(130% 100% at top center);
       }
 
